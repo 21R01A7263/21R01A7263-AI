@@ -2,7 +2,7 @@ import numpy as np
 import itertools
 import pandas as pd
 states=['sleeping','eating','walking']
-hidden_states=['helathy','sick']
+hidden_states=['healthy','sick']
 pi=[0.5,0.5]
 state_space=pd.series(pi,index=hidden_states,name='States')
 print(state_space)
