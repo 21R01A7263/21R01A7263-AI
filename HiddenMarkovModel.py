@@ -31,7 +31,7 @@ def HMM(obsq,a_df,b_df,pi,states,hidden_states):
                                         prod*=b_df[k[j]][k[j-1]]*a_df[i][k[j]]
                             sum+=prod
                             c=0
-                     return sum
+             return sum
 def vertibi(obsq,a_df,b_df,pi,states,hidden_states):
                  sum=0
                  hidst=list(itertools.product(hidden_states,repeat=len(obsq)))
