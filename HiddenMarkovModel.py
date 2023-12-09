@@ -35,7 +35,7 @@ def HMM(obsq,a_df,b_df,pi,states,hidden_states):
 def vertibi(obsq,a_df,b_df,pi,states,hidden_states):
                  sum=0
                  hidst=list(itertools.product(hidden_states,repeat=len(obsq)))
-                 fork in hidst:
+                 for k in hidst:
                             sum1=0
                             prod=1
                             for j in range(len(k)):
