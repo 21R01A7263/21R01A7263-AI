@@ -15,7 +15,7 @@ while turns > 0:
 	failed = 0
 	for char in word:
 		if char in guesses:
-			print(char, end=" ")
+			print(char,end=" ")
 		else:
 			print("_")
 			failed += 1
